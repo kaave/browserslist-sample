@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "node tools/info.js",
+    "coverage": "node tools/coverage.js",
     "build": "run-s build:*",
     "build:babel": "node tools/babel.js",
     "build:browserify": "node tools/browserify.js",
@@ -11,6 +13,7 @@
     "build:styles": "postcss source/**/*.css -c tools/postcss.config.js -d build/"
   },
   "browserslist": [
+    "> 3% in JP",
     "chrome 55"
   ],
   "devDependencies": {
@@ -23,5 +26,8 @@
     "npm-run-all": "^4.0.2",
     "postcss-cli": "^4.0.0",
     "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "browserslist": "^2.1.4"
   }
 }
