@@ -1,0 +1,27 @@
+{
+  "name": "browserlist-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "run-s build:*",
+    "build:babel": "node tools/babel.js",
+    "build:browserify": "node tools/browserify.js",
+    "build:webpack": "webpack --config tools/webpack.config.js",
+    "build:styles": "postcss source/**/*.css -c tools/postcss.config.js -d build/"
+  },
+  "browserslist": [
+    "chrome 55"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "npm-run-all": "^4.0.2",
+    "postcss-cli": "^4.0.0",
+    "webpack": "^2.6.1"
+  }
+}
