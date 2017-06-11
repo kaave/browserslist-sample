@@ -11,6 +11,6 @@ console.log('\n---Target browsers---');
 console.log(browsers);
 console.log('\n---Coverage---');
 console.log(`${browserslist.coverage(browsers)}%`);
-console.log('\n---autoprefixer info---');
-console.log(autoprefixer({ browsers: packageJson.browserslist }).info());
+// console.log('\n---autoprefixer info---');
+// console.log(autoprefixer({ browsers: packageJson.browserslist }).info());
 
