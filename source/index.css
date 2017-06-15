@@ -4,3 +4,7 @@ body {
     align-items: center;
 }
 
+button {
+    appearance: none;
+}
+

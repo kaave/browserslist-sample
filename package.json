@@ -16,8 +16,8 @@
     "ie 11",
     "ios >= 9",
     "android >= 4.4",
-    "last 2 versions",
-    "not ie < 11"
+    "> 1% in jp",
+    "not ie <= 10"
   ],
   "devDependencies": {
     "autoprefixer": "^7.1.1",
